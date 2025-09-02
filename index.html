@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portföyüm</title>
+  <!--  <link rel="stylesheet" href="profilCSS/profilimCSS.css">-->
+    <link rel="stylesheet" href="profilCSS/profilimCSS.css">
+    <link rel="stylesheet" href="profilCSS/modal-styles.css">
+    <link type="image/png" rel="icon" href="img/icons.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+
+<body>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+    </audio>
+
+    <!-- Music Control -->
+    <div class="music-control" id="musicControl">
+        <i class="fas fa-music" id="musicIcon"></i>
+    </div>
+
+    <!-- Enhanced Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+
+    <!-- Fixed Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">KAREEM JABR</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="#education" class="nav-link">Deneyim</a></li>
+                <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+                <li><a href="#projects" class="nav-link">Projeler</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h4>Merhaba, Ben</h4>
+                <h1>Kareem <span class="highlight">Jabr</span></h1>
+                <h3>Bilgisayar Mühendisi</h3>
+                <div class="cta-buttons">
+                   <!-- <a href="CV.pdf" target="_blank" class="cta-button">CV İndir <i class="fas fa-download"></i></a>-->
+                  
+			     <a href="#projects" class="cta-button secondary">Projelerimi Gör <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+       <div class="hero-image">
+                <div class="profile-avatar">
+                    <div class="avatar-ring"></div>
+                    <img src="img/ben.png" alt="Kareem Jabr" class="avatar-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- About Section -->
+    <section class="section" id="about">
+        <div class="glass-container">
+            <div class="section-title">
+                <h2>Hakkımda <span class="highlight">& Deneyimim</span></h2>
+                <p>Yapay zeka ve yazılım geliştirme alanında uzmanlaşılmış bir bilgisayar mühendisiyim</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-illustration">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Profesyonel Yolculuk</h3>
+                    <p>
+                        <strong>İstanbul Gedik Üniversitesi</strong>'nde Bilgisayar Mühendisliği eğitimi alınırken, akademik bilgi pratik uygulamalarla birleştirildi. Üniversite yılları boyunca C, C#, Python, HTML, CSS, JavaScript ve Assembly dillerinde güçlü bir temel oluşturuldu.
+                    </p>
+                    <p>
+                        <strong>Arvis Teknoloji</strong>'de AI & Yazılım Geliştiricisi olarak çalışılırken, yapay zeka ve makine öğrenmesi alanında derinlemesine deneyim kazanıldı. YOLOv5/v8 ile nesne tespiti modelleri geliştirildi ve PyTorch, TensorFlow kullanılarak ileri seviye AI çözümleri üretildi.
+                    </p>
+                    <p>
+                        <strong>Teknik uzmanlık alanları</strong> arasında OpenCV ile bilgisayarlı görü, gerçek zamanlı yüz tanıma sistemleri, ses sınıflandırma algoritmaları ve full-stack web geliştirme yer alıyor. Node.js, React.js ve MySQL kullanılarak ölçeklenebilir backend mimarileri tasarlandı.
+                    </p>
+                    <p>
+                        <strong>Son projelerde</strong> Meta Llama 3.1 modeli LoRA ile fine-tuning yapılarak startup değerlendirme platformu geliştirildi. Bu projede manuel değerlendirme süresi %85 kısaltıldı ve %94 doğruluk oranı sağlandı. Ayrıca React.js ve Three.js kullanılarak 3D yapay zeka psikoloji doktoru uygulaması geliştirildi.
+                    </p>
+                    <p>
+                        <strong>Takım çalışması ve liderlik</strong> konularında da güçlü deneyim sahibi olundu. Agile metodolojileri kullanılarak proje yönetimi yapıldı, code review süreçlerinde aktif rol alındı ve junior geliştiricilere mentorluk edildi.
+                    </p>
+                    <p>
+                        <strong>Sürekli öğrenme</strong> felsefesiyle güncel teknoloji trendleri takip edildi ve projelere entegre edildi. Özellikle WebRTC ile gerçek zamanlı iletişim, Flutter ile cross-platform mobil geliştirme ve modern AI/ML teknolojilerinde uzmanlaşma devam ettirildi.
+                    </p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i><span class="label">Telefon:</span> +90 552 573 90 68</p>
+                        <p><i class="fas fa-envelope"></i><span class="label">E-posta:</span> kerimjabr@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i><span class="label">Konum:</span> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-flag"></i><span class="label">Uyruk:</span> Filistin</p>
+                        <p><i class="fas fa-calendar"></i><span class="label">Doğum:</span> 26 Şubat 2001</p>
+                        <p><i class="fas fa-language"></i><span class="label">Diller:</span> Arapça (Ana dil), Türkçe (Akıcı), İngilizce (İyi)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education & Experience Section -->
+    <section class="section" id="education">
+        <div class="glass-container">
+            <div class="section-title">
+                <h2>Eğitim & <span class="highlight">Deneyim</span></h2>
+                <p>Alınmış akademik eğitim ve kazanılmış profesyonel deneyimler</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>İstanbul Gedik Üniversitesi</h4>
+                    <p><strong>Bilgisayar Mühendisliği (2021-2025)</strong><br>
+                    Yapay zeka, algoritmalar, veri yapıları, yazılım mühendisliği ve proje yönetimi konularında kapsamlı eğitim alındı. 
+                    Bitirme tezi: "3D Yapay Zeka Psikoloji Doktoru" - React.js, Three.js ve OpenAI API entegrasyonu tamamlandı.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Jenin Endüstri Meslek Lisesi</h4>
+                    <p><strong>Bilgisayar Donanımı (2017-2019)</strong><br>
+                    Windows sistemleri, donanım onarımı, ağ altyapısı kurulumu ve teknik destek alanlarında eğitim alındı. 
+                    Bilgisayar parçalarının montajı, sürücü kurulumu ve sistem optimizasyonu konularında temel beceriler kazanıldı.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h4>İstanbul Gelişim Üniversitesi</h4>
+                    <p><strong>Türkçe Öğrenimi</strong><br>
+                    Türkiye'ye geldikten sonra dil eğitimi alınarak Türkçe seviyesi geliştirildi. 
+                    Akademik ve profesyonel ortamlarda akıcı iletişim kurulabilecek düzeyde Türkçe konuşma yetisi elde edildi.</p>
+                </div>
+                 <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>Arvis Teknoloji A.Ş.</h4>
+                    <p><strong>AI & Yazılım Geliştiricisi (Şub 2024 - Ağu 2025)</strong><br>
+                    YOLOv5/v8 nesne tespiti geliştirildi, PyTorch ile makine öğrenmesi uygulandı, OpenCV yüz tanıma sistemleri kuruldu. 
+                    Full-stack LMS/PMS geliştirildi, Jitsi video konferans entegrasyonu ve gerçek zamanlı chat sistemleri oluşturuldu.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4>Rocket Akademi</h4>
+                    <p><strong>LLM Geliştiricisi (Haz 2025 - Tem 2025)</strong><br>
+                    Teknopark İstanbul için Meta Llama 3.1 modeli LoRA ile fine-tuning yapıldı. 
+                    Startup değerlendirme platformu geliştirildi, %85 süre tasarrufu ve %94 doğruluk oranı elde edildi.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>MS Bit Academy</h4>
+                    <p><strong>Web Geliştiricisi (Tem 2023 - Ağu 2023)</strong><br>
+                    HTML, CSS, JavaScript ile web geliştirme gerçekleştirildi. Ülker için interaktif photo map ve 
+                    çiğ köfte sipariş sistemi tasarlandı. Kullanıcı deneyimi odaklı frontend geliştirildi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="glass-container">
+            <div class="section-title">
+                <h2>Teknik <span class="highlight">Yeteneklerim</span></h2>
+                <p>Kullandığım teknolojiler ve programlama dilleri</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="skill-name">Python</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="skill-name">C/C++</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-swift"></i>
+                    </div>
+                    <div class="skill-name">Swift</div>
+                </div>
+                
+                <!-- Web Technologies -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="skill-name">Node.js</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="skill-name">React.js</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="skill-name">HTML5</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-name">CSS3</div>
+                </div>
+                
+                <!-- Mobile & Frameworks -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="skill-name">Flutter</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="skill-name">Three.js</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="skill-name">Express.js</div>
+                </div>
+                
+                <!-- Database -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="skill-name">MySQL</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="skill-name">MongoDB</div>
+                </div>
+                
+                <!-- AI/ML Technologies -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="skill-name">PyTorch</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="skill-name">TensorFlow</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="skill-name">OpenCV</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="skill-name">YOLO</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="skill-name">Transformers</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <div class="skill-name">Librosa</div>
+                </div>
+                
+                <!-- Real-time & Communication -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="skill-name">Socket.IO</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="skill-name">Jitsi Meet</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <div class="skill-name">WebRTC</div>
+                </div>
+                
+                <!-- Tools & Others -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="skill-name">Git</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="skill-name">JWT</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="skill-name">SSL</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="skill-name">FFmpeg</div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Projects Overview Section -->
+    <section class="section" id="projects">
+        <div class="glass-container">
+            <div class="section-title">
+                <h2><span class="highlight">Projeler</span></h2><br>
+                <p>Yapay zeka ve modern teknolojilerle geliştirilmiş kapsamlı projeler</p>
+            </div>
+
+            <!-- Modern Accordion Gallery -->
+            <div class="projects-gallery">
+                <ul>
+                    <li tabindex="1" data-project="llm-startup-evaluation">
+                        <div>
+                            <a href="#" onclick="openProjectModal('llm-startup-evaluation'); return false;">
+                                <h2>LLM Startup Platform</h2>
+                                <p>Meta Llama 3.1 ile startup değerlendirme sistemi geliştirildi. %94 doğruluk oranı elde edildi.</p>
+                                <div class="tech-tags-mini">
+                                    <span class="tech-tag-mini">Llama 3.1</span>
+                                    <span class="tech-tag-mini">LoRA</span>
+                                    <span class="tech-tag-mini">PyTorch</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li tabindex="2" data-project="3d-ai-psychology">
+                        <div>
+                            <a href="#" onclick="openProjectModal('3d-ai-psychology'); return false;">
+                                <h2>3D AI Doktor</h2>
+                                <p>Three.js ve OpenAI ile 3D psikoloji doktoru uygulaması geliştirildi.</p>
+                                <div class="tech-tags-mini">
+                                    <span class="tech-tag-mini">React.js</span>
+                                    <span class="tech-tag-mini">Three.js</span>
+                                    <span class="tech-tag-mini">OpenAI</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li tabindex="3" data-project="fullstack-lms">
+                        <div>
+                            <a href="#" onclick="openProjectModal('fullstack-lms'); return false;">
+                                <h2>LMS Platform</h2>
+                                <p>AI destekli eğitim yönetim sistemi oluşturuldu. Yüz tanıma ve ses analizi entegre edildi.</p>
+                                <div class="tech-tags-mini">
+                                    <span class="tech-tag-mini">Node.js</span>
+                                    <span class="tech-tag-mini">OpenCV</span>
+                                    <span class="tech-tag-mini">TensorFlow</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li tabindex="4" data-project="yolo-detection">
+                        <div>
+                            <a href="#" onclick="openProjectModal('yolo-detection'); return false;">
+                                <h2>YOLO Detection</h2>
+                                <p>YOLOv8 ile nesne tespiti sistemi kuruldu. Gerçek zamanlı object detection uygulandı.</p>
+                                <div class="tech-tags-mini">
+                                    <span class="tech-tag-mini">YOLOv8</span>
+                                    <span class="tech-tag-mini">OpenCV</span>
+                                    <span class="tech-tag-mini">Python</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li tabindex="5" data-project="flutter-hub">
+                        <div>
+                            <a href="#" onclick="openProjectModal('flutter-hub'); return false;">
+                                <h2>Flutter Hub</h2>
+                                <p>Cross-platform mobil uygulama geliştirildi. WebRTC ile video iletişim sağlandı.</p>
+                                <div class="tech-tags-mini">
+                                    <span class="tech-tag-mini">Flutter</span>
+                                    <span class="tech-tag-mini">WebRTC</span>
+                                    <span class="tech-tag-mini">Dart</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li tabindex="6" data-project="web-projects">
+                        <div>
+                            <a href="#" onclick="openProjectModal('web-projects'); return false;">
+                                <h2>Web Projeleri</h2>
+                                <p>Modern web uygulamaları geliştirildi. Responsive ve interaktif tasarım uygulandı.</p>
+                                <div class="tech-tags-mini">
+                                    <span class="tech-tag-mini">JavaScript</span>
+                                    <span class="tech-tag-mini">HTML5</span>
+                                    <span class="tech-tag-mini">CSS3</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <section class="footer" id="contact">
+        <h3>Benimle <span class="highlight">İletişime</span> Geçin</h3>
+        <div class="social-links">
+            <a href="mailto:kerimjabr@gmail.com" class="social-link" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kareem-zayed" class="social-link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/kareem.zayed.50" class="social-link" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com/kerim._.sz" class="social-link" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=905525739068" class="social-link" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:905525739068" class="social-link">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        <p class="copyright">© 2025 Kareem Jabr. Tüm haklar saklıdır.</p>
+    </section>
+
+       <!-- Modern Project Modal -->
+    <div id="projectModal" class="modern-modal">
+        <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+        <div class="modal-container">
+            <!-- Modal Header -->
+            <div class="modal-header-section">
+                <button class="modal-close-button" onclick="closeProjectModal()" aria-label="Kapat">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h1 class="modal-project-title" id="modalProjectTitle">Proje Başlığı</h1>
+                <p class="modal-project-category" id="modalProjectCategory">Kategori</p>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="modal-content-section">
+                <!-- Image Gallery Section -->
+                <div class="modal-gallery-section">
+                    <div class="main-gallery-container">
+                        <div class="gallery-slider" id="gallerySlider">
+                            <!-- Resimler dinamik olarak buraya gelecek -->
+                        </div>
+                            <!-- Video kontrolları -->
+    <div class="video-controls" id="videoControls" style="display: none;">
+        <button class="video-play-btn" id="videoPlayBtn">
+            <i class="fas fa-play"></i>
+        </button>
+        <div class="video-progress">
+            <div class="video-progress-bar" id="videoProgressBar"></div>
+        </div>
+        <button class="video-fullscreen-btn" id="videoFullscreenBtn">
+            <i class="fas fa-expand"></i>
+        </button>
+    </div>
+                        <!-- Gallery Controls -->
+                        <div class="gallery-controls">
+                            <button class="gallery-nav-btn prev-btn" id="prevBtn" onclick="previousSlide()">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="gallery-nav-btn next-btn" id="nextBtn" onclick="nextSlide()">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Gallery Indicators -->
+                        <div class="gallery-indicators" id="galleryIndicators">
+                            <!-- Indicator'lar dinamik olarak buraya gelecek -->
+                        </div>
+                    </div>
+                    
+                    <!-- Thumbnail Navigation -->
+                    <div class="thumbnail-navigation" id="thumbnailNavigation">
+                        <!-- Thumbnail'lar dinamik olarak buraya gelecek -->
+                    </div>
+                </div>
+
+                <!-- Project Details Section -->
+                <div class="modal-details-section">
+                    <!-- Project Info Cards -->
+                    <div class="project-info-cards">
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Tarih</span>
+                            </div>
+                            <div class="info-card-content" id="projectDate">-</div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <i class="fas fa-user-tie"></i>
+                                <span>Destekleyen</span>
+                            </div>
+                            <div class="info-card-content" id="projectClient">-</div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <i class="fas fa-tasks"></i>
+                                <span>Durum</span>
+                            </div>
+                            <div class="info-card-content">
+                                <span class="project-status-badge" id="projectStatus">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technologies Section -->
+                    <div class="details-section">
+                        <h3 class="section-header">
+                            <i class="fas fa-tools"></i>
+                            Kullanılan Teknolojiler
+                        </h3>
+                        <div class="technologies-grid" id="technologiesGrid">
+                            <!-- Teknolojiler dinamik olarak buraya gelecek -->
+                        </div>
+                    </div>
+
+                    <!-- Features Section -->
+                    <div class="details-section">
+                        <h3 class="section-header">
+                            <i class="fas fa-star"></i>
+                            Öne Çıkan Özellikler
+                        </h3>
+                        <div class="features-grid" id="featuresGrid">
+                            <!-- Özellikler dinamik olarak buraya gelecek -->
+                        </div>
+                    </div>
+
+                    <!-- Description Section -->
+                    <div class="details-section">
+                        <h3 class="section-header">
+                            <i class="fas fa-info-circle"></i>
+                            Proje Detayları
+                        </h3>
+                        <div class="project-description-content" id="projectDescriptionContent">
+                            <!-- Açıklama dinamik olarak buraya gelecek -->
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="modal-actions-section">
+                        <a href="#" class="action-button secondary-button" id="githubButton" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Repository</span>
+                        </a>
+                        <a href="#" class="action-button primary-button" id="demoButton" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Canlı Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/projects-data.js"></script>
+
+   <script>
+// 🔧 OPTİMİZE EDİLMİŞ JAVASCRIPT KODU
+
+let currentSlideIndex = 0;
+let currentProjectData = null;
+let totalSlides = 0;
+
+
+function goToProjectDetails(projectId) {
+    console.log('🔵 goToProjectDetails çağrıldı:', projectId);
+    openProjectModal(projectId);
+}
+
+function openProjectModal(projectId) {
+    console.log('🔵 Modal açılıyor:', projectId);
+    
+    if (typeof projectsData === 'undefined') {
+        console.error('❌ projectsData tanımlı değil!');
+        alert('Proje verileri yüklenemedi. Lütfen sayfayı yenileyin.');
+        return;
+    }
+    
+    if (!projectsData[projectId]) {
+        console.error('❌ Proje bulunamadı:', projectId);
+        return;
+    }
+
+    currentProjectData = projectsData[projectId];
+    currentSlideIndex = 0;
+
+    // Modal içeriğini doldur
+    populateModalContent();
+
+    // Modal'ı göster
+    const modal = document.getElementById('projectModal');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // İlk slide'daki video'yu hazırla (eğer varsa)
+        setTimeout(() => {
+            const firstSlide = document.querySelector('.gallery-slide');
+            const firstVideo = firstSlide?.querySelector('video');
+            if (firstVideo) {
+                firstVideo.load();
+                console.log('🎬 İlk video hazırlandı');
+            }
+        }, 500);
+        
+        console.log('✅ Modal başarıyla açıldı');
+    }
+}
+// Modal kapatma
+function closeProjectModal() {
+    const modal = document.getElementById('projectModal');
+    if (modal) {
+        // Tüm videoları duraklat
+        pauseAllVideos();
+        
+        // Fullscreen'den çık
+        if (document.fullscreenElement) {
+            document.exitFullscreen();
+        }
+        
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+        currentProjectData = null;
+        currentSlideIndex = 0;
+        console.log('✅ Modal kapatıldı ve cleanup tamamlandı');
+    }
+}
+
+// Video format desteği kontrolü
+function checkVideoSupport() {
+    const video = document.createElement('video');
+    const formats = {
+        mp4: 'video/mp4; codecs="avc1.42E01E"',
+        webm: 'video/webm; codecs="vp8, vorbis"',
+        ogg: 'video/ogg; codecs="theora"'
+    };
+    
+    const supported = {};
+    for (let format in formats) {
+        supported[format] = video.canPlayType(formats[format]) !== '';
+    }
+    
+    console.log('📹 Desteklenen video formatları:', supported);
+    return supported;
+}
+
+// Sayfa yüklendiğinde video desteğini kontrol et
+document.addEventListener('DOMContentLoaded', function() {
+    checkVideoSupport();
+    
+    // Performance için video preloading stratejisi
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const video = entry.target.querySelector('video[data-lazy]');
+                if (video) {
+                    video.src = video.dataset.src;
+                    video.load();
+                    video.removeAttribute('data-lazy');
+                    observer.unobserve(entry.target);
+                }
+            }
+        });
+    });
+
+    // Lazy loading için observer'ı başlat
+    document.querySelectorAll('.gallery-slide').forEach(slide => {
+        observer.observe(slide);
+    });
+});
+
+// Hata durumunda fallback
+window.addEventListener('error', function(e) {
+    if (e.target.tagName === 'VIDEO') {
+        console.error('🚨 Video hatası:', e.target.src);
+        handleVideoError(e.target);
+    }
+});
+
+// Network durumu kontrolü - mobil için önemli
+function checkNetworkAndAdjustQuality() {
+    if (navigator.connection) {
+        const connection = navigator.connection;
+        const isSlowConnection = connection.effectiveType === '2g' || connection.effectiveType === 'slow-2g';
+        
+        if (isSlowConnection) {
+            console.log('🐌 Yavaş internet algılandı, video kalitesi düşürülüyor');
+            document.querySelectorAll('video').forEach(video => {
+                video.preload = 'metadata'; // Sadece metadata yükle
+            });
+        }
+    }
+}
+
+// Sayfa yüklendiğinde network kontrolü
+document.addEventListener('DOMContentLoaded', function() {
+    checkNetworkAndAdjustQuality();
+    
+    // Network değişikliklerini dinle
+    if (navigator.connection) {
+        navigator.connection.addEventListener('change', checkNetworkAndAdjustQuality);
+    }
+});
+
+// Video format desteği
+const supportedVideoFormats = ['mp4', 'webm', 'mov'];
+
+function getVideoSources(videoPath) {
+    const basePath = videoPath.replace(/\.[^/.]+$/, "");
+    return [
+        `${basePath}.mp4`,
+        `${basePath}.webm`
+    ];
+}
+// Modal içeriğini doldurma
+function populateModalContent() {
+    const project = currentProjectData;
+
+    document.getElementById('modalProjectTitle').textContent = project.title;
+    document.getElementById('modalProjectCategory').textContent = project.category;
+    document.getElementById('projectDate').textContent = project.date;
+    document.getElementById('projectClient').textContent = project.client;
+    
+    const statusBadge = document.getElementById('projectStatus');
+    statusBadge.textContent = project.status;
+    statusBadge.className = 'project-status-badge';
+    
+    if (project.status.includes('Tamamlandı')) {
+        statusBadge.classList.add('status-completed');
+    } else if (project.status.includes('Aktif')) {
+        statusBadge.classList.add('status-active');
+    } else {
+        statusBadge.classList.add('status-planning');
+    }
+
+    createImageGallery(project.images);
+    populateTechnologies(project.technologies);
+    populateFeatures(project.features);
+    document.getElementById('projectDescriptionContent').innerHTML = project.fullDescription;
+    setupActionButtons(project);
+}
+// Video media type tespiti için yardımcı fonksiyon
+function isVideoFile(filename) {
+    const videoExtensions = ['mp4', 'webm', 'ogg', 'mov', 'avi', 'mkv'];
+    const extension = filename.toLowerCase().split('.').pop();
+    return videoExtensions.includes(extension);
+}
+function createImageGallery(images) {
+    const allMedia = [];
+    
+    // Ana medyayı ekle (resim veya video)
+    if (images.main) {
+        allMedia.push({
+            type: isVideoFile(images.main) ? 'video' : 'image',
+            src: images.main,
+            title: 'Ana Görsel'
+        });
+    }
+    
+    // Galeri medyalarını ekle
+    images.gallery.forEach((mediaSrc, index) => {
+        allMedia.push({
+            type: isVideoFile(mediaSrc) ? 'video' : 'image',
+            src: mediaSrc,
+            title: `Görsel ${index + 2}`
+        });
+    });
+
+    totalSlides = allMedia.length;
+    const gallerySlider = document.getElementById('gallerySlider');
+    gallerySlider.innerHTML = '';
+
+    allMedia.forEach((media, index) => {
+        const slide = document.createElement('div');
+        slide.className = 'gallery-slide';
+        slide.setAttribute('data-index', index);
+        
+        if (media.type === 'video') {
+            slide.innerHTML = `
+                <video 
+                    controls 
+                    preload="metadata"
+                    playsinline
+                    data-title="${media.title}"
+                    style="display: block;"
+                    onloadedmetadata="handleVideoLoaded(this)"
+                    onerror="handleVideoError(this)"
+                >
+                    <source src="${media.src}" type="video/mp4">
+                    <source src="${media.src.replace(/\.[^/.]+$/, '.webm')}" type="video/webm">
+                    <p>Tarayıcınız video oynatmayı desteklemiyor. <a href="${media.src}">Videoyu indirin</a>.</p>
+                </video>
+                <div class="video-buffer-indicator"></div>
+            `;
+        } else {
+            slide.innerHTML = `
+                <img 
+                    src="${media.src}" 
+                    alt="${media.title}"
+                    loading="lazy"
+                    onload="handleImageLoaded(this)"
+                    onerror="handleImageError(this)"
+                >
+            `;
+        }
+        
+        gallerySlider.appendChild(slide);
+    });
+
+    createGalleryIndicators(allMedia.length);
+    createThumbnailNavigation(allMedia);
+    updateNavigationButtons();
+    
+    console.log(`${allMedia.length} medya yüklendi (${allMedia.filter(m => m.type === 'video').length} video, ${allMedia.filter(m => m.type === 'image').length} resim)`);
+}
+
+
+// Video yüklendiğinde çalışacak fonksiyon
+function handleVideoLoaded(video) {
+    video.setAttribute('data-loaded', 'true');
+    console.log('✅ Video yüklendi:', video.src);
+    
+    // Video metadata yüklenince duration'u göster
+    if (video.duration && !isNaN(video.duration)) {
+        updateVideoTime(video);
+    }
+}
+
+// Video hata durumu
+function handleVideoError(video) {
+    console.error('❌ Video yüklenemedi:', video.src);
+    const slide = video.closest('.gallery-slide');
+    
+    slide.innerHTML = `
+        <div class="video-error">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p>Video yüklenemedi</p>
+            <p style="font-size: 12px; margin-top: 8px; opacity: 0.7;">
+                ${video.src.split('/').pop()}
+            </p>
+        </div>
+    `;
+}
+
+// Resim yüklendiğinde
+function handleImageLoaded(img) {
+    img.style.opacity = '1';
+    console.log('✅ Resim yüklendi:', img.src);
+}
+
+// Resim hata durumu
+function handleImageError(img) {
+    console.error('❌ Resim yüklenemedi:', img.src);
+    img.style.display = 'none';
+    
+    const slide = img.closest('.gallery-slide');
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'video-error';
+    errorDiv.innerHTML = `
+        <i class="fas fa-image"></i>
+        <p>Görsel yüklenemedi</p>
+    `;
+    slide.appendChild(errorDiv);
+}
+
+
+function createGalleryIndicators(count) {
+    const galleryIndicators = document.getElementById('galleryIndicators');
+    galleryIndicators.innerHTML = '';
+
+    for (let i = 0; i < count; i++) {
+        const indicator = document.createElement('div');
+        indicator.className = `gallery-indicator ${i === 0 ? 'active' : ''}`;
+        indicator.onclick = () => goToSlide(i);
+        galleryIndicators.appendChild(indicator);
+    }
+}
+
+function createThumbnailNavigation(allMedia) {
+    const thumbnailNavigation = document.getElementById('thumbnailNavigation');
+    thumbnailNavigation.innerHTML = '';
+
+    allMedia.forEach((media, index) => {
+        const thumbnail = document.createElement('div');
+        thumbnail.className = `thumbnail-item ${index === 0 ? 'active' : ''}`;
+        
+        if (media.type === 'video') {
+            thumbnail.classList.add('video-thumbnail');
+            // Video için poster thumbnail - video'nun ilk frame'ini kullan
+            thumbnail.innerHTML = `
+                <video muted preload="metadata" style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="${media.src}#t=1" type="video/mp4">
+                </video>
+            `;
+        } else {
+            thumbnail.innerHTML = `
+                <img 
+                    src="${media.src}" 
+                    alt="Thumbnail ${index + 1}" 
+                    style="width: 100%; height: 100%; object-fit: cover;"
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                >
+            `;
+        }
+        
+        thumbnail.onclick = () => goToSlide(index);
+        thumbnailNavigation.appendChild(thumbnail);
+    });
+}
+
+// Video time güncelleme fonksiyonu
+function updateVideoTime(video) {
+    const duration = video.duration || 0;
+    const currentTime = video.currentTime || 0;
+    
+    const formatTime = (seconds) => {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+    };
+    
+    // Eğer custom kontroller varsa time display'i güncelle
+    const timeDisplay = video.parentElement.querySelector('.video-time');
+    if (timeDisplay) {
+        timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+    }
+}
+
+// Tüm videoları durdur - güncellenmiş
+function pauseAllVideos() {
+    document.querySelectorAll('video').forEach(video => {
+        if (!video.paused) {
+            video.pause();
+            console.log('⏸️ Video durduruldu:', video.src);
+        }
+    });
+}
+
+// Slide değiştiğinde - video optimizasyonu
+function goToSlide(index) {
+    if (index < 0 || index >= totalSlides) return;
+
+    // Tüm videoları duraklat
+    pauseAllVideos();
+
+    // Önceki slide'dan çık
+    const prevSlide = document.querySelector('.gallery-slide.active');
+    if (prevSlide) {
+        prevSlide.classList.remove('active');
+    }
+
+    currentSlideIndex = index;
+    const gallerySlider = document.getElementById('gallerySlider');
+    gallerySlider.style.transform = `translateX(-${index * 100}%)`;
+
+    // Aktif slide'ı işaretle
+    const currentSlide = gallerySlider.children[index];
+    if (currentSlide) {
+        currentSlide.classList.add('active');
+        
+        // Eğer video varsa metadata'sını yükle
+        const video = currentSlide.querySelector('video');
+        if (video && !video.getAttribute('data-loaded')) {
+            video.load(); // Metadata'yı tekrar yükle
+        }
+    }
+
+    // Indicator'ları güncelle
+    document.querySelectorAll('.gallery-indicator').forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === index);
+    });
+
+    // Thumbnail'ları güncelle
+    document.querySelectorAll('.thumbnail-item').forEach((thumbnail, i) => {
+        thumbnail.classList.toggle('active', i === index);
+    });
+
+    updateNavigationButtons();
+    console.log(`📍 Slide ${index + 1}/${totalSlides} aktif`);
+}
+// Navigation fonksiyonları
+function previousSlide() {
+    goToSlide(currentSlideIndex - 1);
+}
+
+function nextSlide() {
+    goToSlide(currentSlideIndex + 1);
+}
+
+function updateNavigationButtons() {
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    if (prevBtn && nextBtn) {
+        prevBtn.disabled = currentSlideIndex === 0;
+        nextBtn.disabled = currentSlideIndex === totalSlides - 1;
+    }
+}
+
+// Teknolojileri doldurma
+function populateTechnologies(technologies) {
+    const container = document.getElementById('technologiesGrid');
+    container.innerHTML = '';
+
+    technologies.forEach((tech, index) => {
+        const techTag = document.createElement('span');
+        techTag.className = 'technology-tag';
+        techTag.textContent = tech;
+        container.appendChild(techTag);
+    });
+}
+
+// Özellikleri doldurma
+function populateFeatures(features) {
+    const container = document.getElementById('featuresGrid');
+    container.innerHTML = '';
+
+    features.forEach((feature, index) => {
+        const featureItem = document.createElement('div');
+        featureItem.className = 'feature-item';
+        featureItem.innerHTML = `
+            <i class="fas fa-check-circle"></i>
+            <span class="feature-text">${feature}</span>
+        `;
+        container.appendChild(featureItem);
+    });
+}
+
+// Action butonlarını ayarlama
+function setupActionButtons(project) {
+    const githubBtn = document.getElementById('githubButton');
+    const demoBtn = document.getElementById('demoButton');
+
+    if (githubBtn) {
+        if (project.githubLink) {
+            githubBtn.href = project.githubLink;
+            githubBtn.style.display = 'flex';
+        } else {
+            githubBtn.style.display = 'none';
+        }
+    }
+
+    if (demoBtn) {
+        if (project.demoLink) {
+            demoBtn.href = project.demoLink;
+            demoBtn.style.display = 'flex';
+        } else {
+            demoBtn.style.display = 'none';
+        }
+    }
+}
+
+// SAYFA YÜKLENMESİ VE KONTROLLERLER
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('📄 Sayfa yüklendi - DOM hazır');
+    
+    // Projects data kontrol - biraz bekle
+    setTimeout(() => {
+        if (typeof projectsData !== 'undefined') {
+            console.log('✅ Projects data başarıyla yüklendi');
+            console.log('📋 Mevcut projeler:', Object.keys(projectsData));
+        } else {
+            console.error('❌ Projects data yüklenemedi!');
+            console.error('🔍 Dosya yolu kontrol edin: js/projects-data.js');
+        }
+    }, 500);
+    
+    // Modal elementi kontrol
+    const modal = document.getElementById('projectModal');
+    if (modal) {
+        console.log('✅ Modal elementi bulundu');
+    } else {
+        console.error('❌ Modal elementi bulunamadı!');
+    }
+    
+    // Proje linklerini kontrol
+    const projectLinks = document.querySelectorAll('[data-project]');
+    console.log(`✅ ${projectLinks.length} proje linki bulundu`);
+    
+    projectLinks.forEach(link => {
+        const projectId = link.getAttribute('data-project');
+        console.log(`📌 Proje linki: ${projectId}`);
+    });
+
+    // Music control setup
+    const musicControl = document.getElementById('musicControl');
+    const musicIcon = document.getElementById('musicIcon');
+
+    if (musicControl && musicIcon) {
+        musicControl.addEventListener('click', () => {
+            if (!isPlaying) {
+                isPlaying = true;
+                musicIcon.className = 'fas fa-volume-up';
+                createAmbientMusic();
+                musicControl.title = 'Müziği Durdur';
+            } else {
+                isPlaying = false;
+                musicIcon.className = 'fas fa-music';
+                if (audioContext) {
+                    audioContext.close();
+                    audioContext = null;
+                }
+                musicControl.title = 'Müziği Başlat';
+            }
+        });
+        musicControl.title = 'Müziği Başlat';
+    }
+
+    // Mobile menu setup
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = navToggle.querySelector('i');
+            if (icon) {
+                if (navMenu.classList.contains('active')) {
+                    icon.classList.replace('fa-bars', 'fa-times');
+                } else {
+                    icon.classList.replace('fa-times', 'fa-bars');
+                }
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = navToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.replace('fa-times', 'fa-bars');
+                }
+            });
+        });
+    }
+    
+    // Trigger initial animations
+    setTimeout(() => {
+        document.querySelectorAll('.section').forEach((section, index) => {
+            setTimeout(() => {
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+            }, index * 200);
+        });
+    }, 100);
+
+     // Video event listeners'ları dinamik olarak ekle
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('video-play-btn')) {
+            const video = e.target.closest('.gallery-slide').querySelector('video');
+            if (video) {
+                toggleVideoPlayPause(video);
+            }
+        }
+        
+        if (e.target.classList.contains('video-fullscreen-btn')) {
+            const video = e.target.closest('.gallery-slide').querySelector('video');
+            if (video) {
+                toggleFullscreen(video);
+            }
+        }
+    });
+
+    // Video progress bar click handling
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('video-progress') || e.target.closest('.video-progress')) {
+            const progressBar = e.target.classList.contains('video-progress') 
+                ? e.target 
+                : e.target.closest('.video-progress');
+            
+            const video = progressBar.closest('.gallery-slide').querySelector('video');
+            if (video && video.duration) {
+                const rect = progressBar.getBoundingClientRect();
+                const clickX = e.clientX - rect.left;
+                const percentage = clickX / rect.width;
+                video.currentTime = video.duration * percentage;
+            }
+        }
+    });
+});
+// Video metadata ve progress tracking
+function setupVideoTracking(video) {
+    video.addEventListener('loadedmetadata', function() {
+        console.log(`📊 Video metadata: ${video.videoWidth}x${video.videoHeight}, ${video.duration.toFixed(1)}s`);
+        updateVideoTime(video);
+    });
+
+    video.addEventListener('timeupdate', function() {
+        updateVideoTime(video);
+        updateProgressBar(video);
+    });
+
+    video.addEventListener('play', function() {
+        video.closest('.gallery-slide')?.classList.add('video-playing');
+    });
+
+    video.addEventListener('pause', function() {
+        video.closest('.gallery-slide')?.classList.remove('video-playing');
+    });
+
+    video.addEventListener('waiting', function() {
+        video.closest('.gallery-slide')?.classList.add('video-buffering');
+    });
+
+    video.addEventListener('canplay', function() {
+        video.closest('.gallery-slide')?.classList.remove('video-buffering');
+    });
+
+    video.addEventListener('ended', function() {
+        console.log('🏁 Video sona erdi');
+        // Otomatik olarak bir sonraki slide'a geç (isteğe bağlı)
+        // nextSlide();
+    });
+}
+
+// Progress bar güncelleme
+function updateProgressBar(video) {
+    const progressBar = video.parentElement.querySelector('.video-progress-bar');
+    if (progressBar && video.duration) {
+        const percentage = (video.currentTime / video.duration) * 100;
+        progressBar.style.width = `${percentage}%`;
+    }
+}
+
+// Background Music Management
+let isPlaying = false;
+let audioContext;
+
+function createAmbientMusic() {
+    if (!audioContext) {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+        function playTone(frequency, duration, delay = 0) {
+            setTimeout(() => {
+                const osc = audioContext.createOscillator();
+                const gain = audioContext.createGain();
+
+                osc.connect(gain);
+                gain.connect(audioContext.destination);
+
+                osc.frequency.setValueAtTime(frequency, audioContext.currentTime);
+                osc.type = 'sine';
+
+                gain.gain.setValueAtTime(0, audioContext.currentTime);
+                gain.gain.linearRampToValueAtTime(0.1, audioContext.currentTime + 0.1);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
+
+                osc.start(audioContext.currentTime);
+                osc.stop(audioContext.currentTime + duration);
+            }, delay);
+        }
+
+        function playAmbientLoop() {
+            if (isPlaying) {
+                playTone(261.63, 4, 0);    // C
+                playTone(329.63, 4, 0);    // E
+                playTone(392.00, 4, 0);    // G
+
+                playTone(293.66, 4, 4000); // D
+                playTone(369.99, 4, 4000); // F#
+                playTone(440.00, 4, 4000); // A
+
+                playTone(246.94, 4, 8000); // B
+                playTone(311.13, 4, 8000); // Eb
+                playTone(415.30, 4, 8000); // Ab
+
+                setTimeout(playAmbientLoop, 12000);
+            }
+        }
+
+        playAmbientLoop();
+    }
+}
+
+// EVENT LISTENERS
+
+// Klavye navigasyonu
+document.addEventListener('keydown', (e) => {
+    const modal = document.getElementById('projectModal');
+    if (!modal || !modal.classList.contains('active')) return;
+
+    const activeVideo = document.querySelector('.gallery-slide.active video');
+
+    switch(e.key) {
+        case 'Escape':
+            closeProjectModal();
+            break;
+        case 'ArrowLeft':
+            if (!activeVideo || activeVideo !== document.activeElement) {
+                previousSlide();
+            }
+            break;
+        case 'ArrowRight':
+            if (!activeVideo || activeVideo !== document.activeElement) {
+                nextSlide();
+            }
+            break;
+        case ' ': // Spacebar - video play/pause
+            if (activeVideo) {
+                e.preventDefault();
+                toggleVideoPlayPause(activeVideo);
+            }
+            break;
+        case 'f': // F key - fullscreen
+            if (activeVideo) {
+                e.preventDefault();
+                toggleFullscreen(activeVideo);
+            }
+            break;
+    }
+});
+
+
+document.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+document.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
+
+// Video play/pause toggle
+function toggleVideoPlayPause(video) {
+    if (video.paused) {
+        // Diğer videoları durdur
+        pauseAllVideos();
+        video.play().then(() => {
+            console.log('▶️ Video oynatılıyor');
+        }).catch(err => {
+            console.error('❌ Video oynatılamadı:', err);
+        });
+    } else {
+        video.pause();
+        console.log('⏸️ Video durduruldu');
+    }
+}
+
+// Fullscreen toggle
+function toggleFullscreen(video) {
+    if (!document.fullscreenElement) {
+        video.requestFullscreen().then(() => {
+            console.log('🖥️ Fullscreen açıldı');
+        }).catch(err => {
+            console.error('❌ Fullscreen açılamadı:', err);
+        });
+    } else {
+        document.exitFullscreen();
+        console.log('🖥️ Fullscreen kapatıldı');
+    }
+}
+
+// Touch/Swipe desteği - video için optimize edilmiş
+let touchStartX = 0;
+let touchEndX = 0;
+let touchStartY = 0;
+let touchEndY = 0;
+
+document.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+});
+
+document.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    touchEndY = e.changedTouches[0].screenY;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const modal = document.getElementById('projectModal');
+    if (!modal || !modal.classList.contains('active')) return;
+
+    const swipeThreshold = 50;
+    const diffX = touchStartX - touchEndX;
+    const diffY = Math.abs(touchStartY - touchEndY);
+
+    // Sadece yatay swipe'larda slide değiştir (dikey scroll'u engellememe)
+    if (Math.abs(diffX) > swipeThreshold && diffY < 100) {
+        const activeVideo = document.querySelector('.gallery-slide.active video');
+        
+        // Eğer video oynatılıyorsa swipe'ı devre dışı bırak
+        if (activeVideo && !activeVideo.paused) {
+            return;
+        }
+
+        if (diffX > 0) {
+            nextSlide();
+        } else {
+            previousSlide();
+        }
+    }
+}
+
+
+// Smooth scrolling for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Enhanced navbar scroll effect
+let ticking = false;
+
+function updateScrollEffects() {
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }
+
+    // Update parallax shapes
+    const scrolled = window.pageYOffset;
+    const shapes = document.querySelectorAll('.shape');
+    
+    shapes.forEach((shape, index) => {
+        const speed = (index + 1) * 0.3;
+        shape.style.transform = `translateY(${scrolled * speed}px)`;
+    });
+
+    // Update hero parallax
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+
+    ticking = false;
+}
+
+function requestScrollUpdate() {
+    if (!ticking) {
+        requestAnimationFrame(updateScrollEffects);
+        ticking = true;
+    }
+}
+
+window.addEventListener('scroll', requestScrollUpdate);
+
+// Enhanced active navigation highlight
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.section, .hero');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// Intersection Observer for section animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+});
+
+// Enhanced hover effects
+document.querySelectorAll('.card, .project-preview-card, .skill-item').forEach(card => {
+    card.addEventListener('mouseenter', function () {
+        this.style.transform = 'translateY(-15px) scale(1.02)';
+    });
+
+    card.addEventListener('mouseleave', function () {
+        this.style.transform = 'translateY(0) scale(1)';
+    });
+});
+
+// Add accessibility improvements
+document.querySelectorAll('.card, .project-preview-card, .skill-item').forEach(card => {
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    
+    card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            card.click();
+        }
+    });
+});
+
+// Error handling for missing images
+document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('error', function() {
+        this.style.display = 'none';
+        console.warn(`Failed to load image: ${this.src}`);
+    });
+});
+
+// Typing effect for hero title
+function typeWriter(element, text, speed = 100) {
+    let i = 0;
+    element.innerHTML = '';
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        } else {
+            element.classList.add('typing-animation');
+        }
+    }
+    type();
+}
+
+// Initialize typing effect when page loads
+window.addEventListener('load', () => {
+    const titleElement = document.querySelector('.hero-content h3');
+    if (titleElement) {
+        const originalText = titleElement.textContent;
+        setTimeout(() => {
+            typeWriter(titleElement, originalText, 80);
+        }, 1500);
+    }
+    
+    document.body.classList.add('loaded');
+});
+
+// Add click effect to buttons
+document.querySelectorAll('.cta-button, .view-project-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        let ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        this.appendChild(ripple);
+        
+        let x = e.clientX - e.target.offsetLeft;
+        let y = e.clientY - e.target.offsetTop;
+        
+        ripple.style.left = x + 'px';
+        ripple.style.top = y + 'px';
+        
+        setTimeout(() => {
+            ripple.remove();
+        }, 600);
+    });
+});
+
+// Smooth reveal animations for skills
+const skillsObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }, index * 50);
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.skill-item').forEach((skill, index) => {
+    skill.style.opacity = '0';
+    skill.style.transform = 'translateY(20px)';
+    skill.style.transition = 'all 0.6s ease';
+    skillsObserver.observe(skill);
+});
+
+// Error handling
+window.addEventListener('error', function(e) {
+    console.error('🚨 JavaScript hatası:', e.error);
+    console.error('📝 Hata detayı:', e.message);
+    console.error('📁 Dosya:', e.filename, 'Satır:', e.lineno);
+});
+
+window.addEventListener('unhandledrejection', function(e) {
+    console.error('🚨 Promise hatası:', e.reason);
+});
+
+// Console welcome message
+console.log(`
+🚀 Betül Özmen - Software Engineer Portfolio
+============================================
+Modern, responsive and interactive portfolio
+Built with: HTML5, CSS3, JavaScript, AI/ML Technologies
+Features: Smooth animations, parallax effects, accessibility
+
+Specializing in:
+- Artificial Intelligence & Machine Learning
+- Computer Vision & Deep Learning
+- Full-Stack Web Development
+- Qt Framework Development
+
+Contact: betulozmen777@gmail.com
+Location: Sancaktepe, Istanbul
+`);
+
+// Add ripple effect CSS dynamically
+const rippleStyle = document.createElement('style');
+rippleStyle.textContent = `
+    .cta-button, .view-project-btn {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .ripple {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(0);
+        animation: ripple-animation 0.6s linear;
+        pointer-events: none;
+    }
+    
+    @keyframes ripple-animation {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(rippleStyle);
+</script>
+
+    <!-- Additional CSS for ripple effects and animations -->
+    <style>
+        /* Enhanced button animations */
+        .cta-button, .view-project-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before, .view-project-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before, .view-project-btn:hover::before {
+            left: 100%;
+        }
+
+        /* Enhanced card animations */
+        .card, .project-preview-card {
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+        }
+
+        .card:hover, .project-preview-card:hover {
+            animation: cardFloat 0.6s ease-in-out;
+        }
+
+        @keyframes cardFloat {
+            0%, 100% { transform: translateY(0) rotateX(0); }
+            50% { transform: translateY(-10px) rotateX(5deg); }
+        }
+
+        /* Skill item glow effect */
+        .skill-item:hover {
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+        }
+
+        /* Enhanced loading states */
+        .loading {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .loading.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive image optimizations */
+        img {
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            filter: brightness(1.1) contrast(1.05);
+        }
+
+        /* Enhanced scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(30, 41, 59, 0.1);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-2);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent);
+        }
+
+        /* Focus styles for accessibility */
+        .nav-link:focus,
+        .cta-button:focus,
+        .view-project-btn:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+            .navbar, .music-control, .animated-bg {
+                display: none;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: 2rem 0;
+            }
+            
+            .section {
+                padding: 2rem 0;
+                page-break-inside: avoid;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            :root {
+                --glass: rgba(255, 255, 255, 1);
+                --glass-dark: rgba(0, 0, 0, 1);
+            }
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</body>
+</html>
