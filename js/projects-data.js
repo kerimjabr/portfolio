@@ -51,14 +51,13 @@ const projectsData = {
                "Transformers",
                "CUDA",
                "Hugging Face",
-               "Git LFS"
+               "Git"
           ],
           category: "AI/ML",
           date: "Haziran 2024 - Temmuz 2024",
           client: "Teknopark İstanbul",
           status: "Tamamlandı",
-          githubLink: "https://github.com/kareemjabr/llm-startup-evaluation",
-          demoLink: null,
+
           images: {
                main: "projectimages/llm/admin_dashboard.png",
                gallery: [
@@ -148,8 +147,7 @@ const projectsData = {
           date: "Eylül 2024 - Ocak 2025",
           client: "İstanbul Gedik Üniversitesi",
           status: "Tamamlandı",
-          githubLink: "https://github.com/kareemjabr/3d-ai-psychology",
-          demoLink: "https://3d-ai-psychology.netlify.app",
+
           images: {
                main: "projectimages/3d-ai-psychology/gallery-1.png",
                gallery: [
@@ -238,8 +236,7 @@ const projectsData = {
           date: "Şubat 2024 - Ağustos 2024",
           client: "Arvis Teknoloji A.Ş. (Uzun Dönem Staj)",
           status: "Tamamlandı",
-          githubLink: null,
-          demoLink: "https://arvis-lms-demo.com",
+    
           images: {
                main: "/projectimages/ManagementSistem/Giriş-Sayfası.png",
                gallery: [
@@ -354,8 +351,7 @@ const projectsData = {
           date: "Ocak 2024 - Mart 2024",
           client: "Kişisel Proje",
           status: "Tamamlandı",
-          githubLink: "https://github.com/kareemjabr/flutter-hub",
-          demoLink: "https://play.google.com/store/apps/details?id=com.kareemjabr.flutterhub",
+
           images: {
                main: "projectimages/flutter-projeler/flutter-hub.mp4",
                gallery: [
@@ -421,8 +417,7 @@ const projectsData = {
           date: "Nisan 2024 - Haziran 2024",
           client: "Kişisel Proje",
           status: "Tamamlandı",
-          githubLink: "https://github.com/kareemjabr/flutter-webrtc",
-          demoLink: null,
+
           images: {
                main: "projectimages/flutter-projeler/flutter-webrtc.PNG",
                gallery: [
@@ -484,8 +479,7 @@ const projectsData = {
           date: "Mart 2024 - Devam Ediyor",
           client: "Çeşitli Projeler",
           status: "Aktif Geliştirme",
-          githubLink: "https://github.com/kareemjabr/yolo-projects",
-          demoLink: "https://yolo-demo.netlify.app",
+
           images: {
                main: "projectimages/bitki/bitki.jpeg",
                gallery: [
@@ -586,8 +580,7 @@ const projectsData = {
           date: "Mayıs 2024 - Temmuz 2024",
           client: "MS Bit Academy Stajı",
           status: "Tamamlandı",
-          githubLink: "https://github.com/kareemjabr/web-projects",
-          demoLink: "https://ulker-photo-map.netlify.app",
+          
           images: {
                main: "projectimages/web-projeler/ulker.mp4",
                gallery: [
@@ -660,8 +653,7 @@ const projectsData = {
           date: "Kasım 2024 - Nisan 2025",
           client: "Kişisel Projeler",
           status: "Tamamlandı",
-          githubLink: "https://github.com/kareemjabr/unity-ar-games",
-          demoLink: "https://play.google.com/store/apps/details?id=com.kareemjabr.argames",
+
           images: {
                main: "https://images.unsplash.com/photo-1592478411213-6153e4ebc696?w=800&h=600&fit=crop",
                gallery: [

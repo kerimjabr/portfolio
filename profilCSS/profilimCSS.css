@@ -1,94 +1,276 @@
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* HTML & ROOT SETUP */
+html {
+    height: 100%;
+    height: -webkit-fill-available; /* iOS Safari */
+    height: -moz-available; /* Firefox */
+    height: stretch; /* Future standard */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+/* CSS VARIABLES - Universal browser support */
 :root {
-   --primary: #1e6872; /* Lacivert */
-   --secondary: #f4f4f9; /* Açık gri */
-   --accent: #17c973; /* Yeşil vurgulu */
-   --success: #38e05f;
-   --warning: #f39c12;
-   --danger: #c0392b;
-   --dark: #121212; /* Siyah koyu */
-   --light: #ecf0f1; /* Açık gri beyaz */
-   --glass: rgba(255, 255, 255, 0.08);
-   --glass-dark: rgba(30, 60, 114, 0.3);
+    /* Color Palette */
+    --primary: #1e6872;
+    --secondary: #f4f4f9;
+    --accent: #17c973;
+    --success: #38e05f;
+    --warning: #f39c12;
+    --danger: #c0392b;
+    --dark: #121212;
+    --light: #ecf0f1;
+    --glass: rgba(255, 255, 255, 0.08);
+    --glass-dark: rgba(30, 60, 114, 0.3);
 
+    /* Universal Gradients - All browser prefixes */
+    --gradient-1: linear-gradient(135deg, #3bb4bd 0%, #81bd85 100%);
+    --gradient-2: linear-gradient(135deg, #52acd2 0%, #d3cd60 50%, #2c5364 100%);
+    --gradient-3: linear-gradient(135deg, #486cee 0%, #45a247 100%);
+    --gradient-4: linear-gradient(135deg, #d75b1e 0%, #d08585 100%);
+    --gradient-5: linear-gradient(135deg, #1f4037 0%, #99f2c8 100%);
+    --gradient-6: linear-gradient(135deg, #587cbd 0%, #5086c4 100%);
 
-   --gradient-1: linear-gradient(135deg, #3bb4bd 0%, #81bd85 100%);
-   --gradient-2: linear-gradient(135deg, #52acd2 0%, #d3cd60 50%, #2c5364 100%);
-   --gradient-3: linear-gradient(135deg, #486cee 0%, #45a247 100%);
-   --gradient-4: linear-gradient(135deg, #d75b1e 0%, #d08585 100%);
-   --gradient-5: linear-gradient(135deg, #1f4037 0%, #99f2c8 100%);
-   --gradient-6: linear-gradient(135deg, #587cbd 0%, #5086c4 100%);
+    /* Main Background - Universal */
+    --main-bg: #1e3c72;
+    --main-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%);
 
-   /* Metalik */
-   --steel-blue: linear-gradient(135deg, #3c71d2 0%, #3b71cd 100%);
-   --army-green: linear-gradient(135deg, #3c3b3f 0%, #605c3c 100%);
-   --iron-grey: linear-gradient(135deg, #597f93 0%, #414345 100%);
-   --navy-black: linear-gradient(135deg, #000428 0%, #004e92 100%);
-   --sport-red: linear-gradient(135deg, #b92b27 0%, #1565c0 100%);
-   --urban-blue: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%);
+    /* Shadows - Universal */
+    --shadow-sm: 0 2px 8px rgba(30, 60, 114, 0.1);
+    --shadow-md: 0 4px 15px rgba(30, 60, 114, 0.15);
+    --shadow-lg: 0 8px 25px rgba(30, 60, 114, 0.2);
+    --shadow-xl: 0 15px 35px rgba(30, 60, 114, 0.25);
 
-   --shadow-sm: 0 2px 8px rgba(30, 60, 114, 0.1);
-   --shadow-md: 0 4px 15px rgba(30, 60, 114, 0.15);
-   --shadow-lg: 0 8px 25px rgba(30, 60, 114, 0.2);
-   --shadow-xl: 0 15px 35px rgba(30, 60, 114, 0.25);
-
-   --blur: 15px;
-   --border-radius: 10px;
-   --transition: all 0.3s ease-in-out;
+    /* Layout */
+    --blur: 15px;
+    --border-radius: 10px;
+    --transition: all 0.3s ease-in-out;
 }
 
-
-/* Body ve genel arka plan */
+/* BODY - Universal Background Setup */
 body {
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #3350d4bd 0%, #1e61d4 50%, #1d0f79 100%); /* Lacivert-Mavi geçiş */
-    color: #ecf0f1; /* Açık gri beyaz yazı */
-    overflow-x: hidden;
+    /* Font Stack - Universal */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', Arial, sans-serif;
+    
+    /* BACKGROUND FALLBACK HIERARCHY - Maximum Compatibility */
+    background-color: #1e3c72 !important; /* Level 1: Solid fallback */
+    background: #1e3c72 !important; /* Level 2: Backup */
+    background: rgb(30, 60, 114) !important; /* Level 3: RGB fallback */
+    
+    /* OLD WEBKIT - iOS Safari 5-6 */
+    background: -webkit-gradient(
+        linear, 
+        left top, right bottom,
+        color-stop(0%, #1e3c72),
+        color-stop(50%, #2a5298),
+        color-stop(100%, #243b55)
+    ) !important;
+    
+    /* WEBKIT - Safari, Chrome old versions */
+    background: -webkit-linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%) !important;
+    
+    /* MOZ - Firefox */
+    background: -moz-linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%) !important;
+    
+    /* O - Opera */
+    background: -o-linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%) !important;
+    
+    /* MS - IE10+ */
+    background: -ms-linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%) !important;
+    
+    /* STANDARD - Modern browsers */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%) !important;
+    
+    /* BACKGROUND PROPERTIES - Universal */
+    background-attachment: scroll; /* iOS Safari compatibility */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* DIMENSIONS - Cross-browser height fix */
+    min-height: 100vh; /* Standard */
+    min-height: 100dvh; /* New viewport units */
+    min-height: -webkit-fill-available; /* iOS Safari */
+    min-height: -moz-available; /* Firefox */
+    min-height: stretch; /* Future */
+    width: 100%;
+    
+    /* TEXT & LAYOUT */
+    color: #ecf0f1;
     line-height: 1.6;
+    overflow-x: hidden;
     position: relative;
-    min-height: 100vh;
+    
+    /* PERFORMANCE - Hardware acceleration */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    /* SCROLL - Touch optimizations */
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    overscroll-behavior-y: contain;
 }
 
+/* BACKUP BACKGROUND LAYER - Emergency fallback */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    height: -webkit-fill-available;
+    z-index: -10;
+    
+    /* Same gradient as body - ultimate fallback */
+    background-color: #1e3c72;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #1e3c72), color-stop(50%, #2a5298), color-stop(100%, #243b55));
+    background: -webkit-linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%);
+    background: -moz-linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%);
+    
+    /* Ensure it's always there */
+    pointer-events: none;
+}
 
-/* Erkeksi Animated Background */
+/* ANIMATED BACKGROUND - Enhanced cross-browser */
 .animated-bg {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    height: -webkit-fill-available;
+    z-index: -2;
     overflow: hidden;
+    
+    /* BACKGROUND - Same hierarchy as body */
+    background-color: #1e3c72;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #1e3c72), color-stop(50%, #2a5298), color-stop(100%, #243b55));
+    background: -webkit-linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%);
+    background: -moz-linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%);
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%);
+    
+    /* ANIMATION - Cross-browser */
+    -webkit-animation: backgroundShift 20s ease-in-out infinite;
+    -moz-animation: backgroundShift 20s ease-in-out infinite;
+    -o-animation: backgroundShift 20s ease-in-out infinite;
     animation: backgroundShift 20s ease-in-out infinite;
+    
+    /* PERFORMANCE */
+    will-change: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* KEYFRAMES - Cross-browser animations */
+@-webkit-keyframes backgroundShift {
+    0%, 100% { 
+        background: -webkit-linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%);
+    }
+    25% { 
+        background: -webkit-linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    }
+    50% { 
+        background: -webkit-linear-gradient(135deg, #283c86 0%, #45a247 100%);
+    }
+    75% { 
+        background: -webkit-linear-gradient(135deg, #141e30 0%, #243b55 100%);
+    }
+}
+
+@-moz-keyframes backgroundShift {
+    0%, 100% { 
+        background: -moz-linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%);
+    }
+    25% { 
+        background: -moz-linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    }
+    50% { 
+        background: -moz-linear-gradient(135deg, #283c86 0%, #45a247 100%);
+    }
+    75% { 
+        background: -moz-linear-gradient(135deg, #141e30 0%, #243b55 100%);
+    }
 }
 
 @keyframes backgroundShift {
-    0%   { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%); }
-    25%  { background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); }
-    50%  { background: linear-gradient(135deg, #283c86 0%, #45a247 100%); }
-    75%  { background: linear-gradient(135deg, #141e30 0%, #243b55 100%); }
-    100% { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%); }
+    0%, 100% { 
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #243b55 100%);
+    }
+    25% { 
+        background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    }
+    50% { 
+        background: linear-gradient(135deg, #283c86 0%, #45a247 100%);
+    }
+    75% { 
+        background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
+    }
 }
 
+/* FLOATING SHAPES - Universal */
+.floating-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
 
-/* Floating shapes mor pembe karpuz tonlarında */
 .shape {
     position: absolute;
     border-radius: 50%;
+    
+    /* ANIMATION - Cross-browser */
+    -webkit-animation: float 20s infinite ease-in-out;
+    -moz-animation: float 20s infinite ease-in-out;
     animation: float 20s infinite ease-in-out;
+    
+    /* PERFORMANCE */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform, opacity;
 }
 
+/* Individual shapes */
 .shape:nth-child(1) {
     width: 100px;
     height: 100px;
     left: 10%;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
     animation-delay: 0s;
     background: rgba(108, 92, 231, 0.2);
 }
@@ -97,6 +279,8 @@ body {
     width: 150px;
     height: 150px;
     left: 80%;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
     animation-delay: 4s;
     background: rgba(253, 121, 168, 0.2);
 }
@@ -105,6 +289,8 @@ body {
     width: 80px;
     height: 80px;
     left: 60%;
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
     animation-delay: 8s;
     background: rgba(255, 118, 117, 0.25);
 }
@@ -113,6 +299,8 @@ body {
     width: 120px;
     height: 120px;
     left: 30%;
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
     animation-delay: 12s;
     background: rgba(162, 155, 254, 0.18);
 }
@@ -121,9 +309,52 @@ body {
     width: 200px;
     height: 200px;
     left: 70%;
+    -webkit-animation-delay: 16s;
+    -moz-animation-delay: 16s;
     animation-delay: 16s;
     background: rgba(232, 67, 147, 0.15);
 }
+
+/* FLOAT ANIMATION - Cross-browser */
+@-webkit-keyframes float {
+    0%, 100% {
+        -webkit-transform: translateY(100vh) rotate(0deg) translateZ(0);
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 0.8;
+    }
+    50% {
+        -webkit-transform: translateY(-100px) rotate(180deg) translateZ(0);
+    }
+}
+
+@-moz-keyframes float {
+    0%, 100% {
+        -moz-transform: translateY(100vh) rotate(0deg) translateZ(0);
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 0.8;
+    }
+    50% {
+        -moz-transform: translateY(-100px) rotate(180deg) translateZ(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(100vh) rotate(0deg) translateZ(0);
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-100px) rotate(180deg) translateZ(0);
+    }
+}
+
 
         /* Music Control */
         .music-control {
